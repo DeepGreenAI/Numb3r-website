@@ -16,8 +16,12 @@ const Home = () => {
   return (
     <div id="homepage">
       <div id="centered-div">
-      <img id="num-img" src="Numb3r.png"/>
-      <img id="binary-num-img" src="binary-numbers.png"/>
+        <div id="num-img-container">
+          <img id="num-img" src="Numb3r.png"/>
+        </div>
+        <div id="binary-num-img-container">
+          <img id="binary-num-img" src="binary-numbers.png"/>
+        </div>
       </div>
     </div>
   );
