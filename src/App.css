@@ -46,3 +46,16 @@ body {
   margin-top:50px;
   max-width:45%;
 }
+
+
+
+@media screen and (max-width: 800px) {
+  #num-img {
+    max-width:75%;
+  }
+  
+  #binary-num-img {
+    margin-top:50px;
+    max-width:75%;
+  }
+}
