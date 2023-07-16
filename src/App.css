@@ -39,14 +39,24 @@ body {
 }
 
 #num-img {
-  max-width:45%;
+  max-width:30%;
 }
 
 #binary-num-img {
-  margin-top:50px;
-  max-width:45%;
+  margin-top:30px;
+  max-width:30%;
 }
 
+@media screen and (max-width: 1200px) {
+  #num-img {
+    max-width:45%;
+  }
+  
+  #binary-num-img {
+    margin-top:30px;
+    max-width:45%;
+  }
+}
 
 
 @media screen and (max-width: 800px) {
@@ -55,7 +65,7 @@ body {
   }
   
   #binary-num-img {
-    margin-top:50px;
+    margin-top:30px;
     max-width:75%;
   }
 }
