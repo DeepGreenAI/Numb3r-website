@@ -10,6 +10,13 @@ const Home = () => {
   const [activePage, setActivePage] = useState("home");
 
 
+  const contactClicked = () => {
+    navigator.clipboard.writeText("contact@numb3rxa.com").then(function() {
+      alert(('Email copied to clipboard!'));
+    }, function(err) {
+      console.error('Could not copy text: ', err);
+    });
+  }
   const refreshPage = () => {
     window.location.reload();
   };
@@ -22,6 +29,9 @@ const Home = () => {
         <div id="binary-num-img-container">
           <img id="binary-num-img" src="binary-numbers.png"/>
         </div>
+      </div>
+      <div id="footer" onClick={contactClicked}>
+        <img src="contact.png"/>
       </div>
     </div>
   );
